@@ -26,6 +26,10 @@ let starWarsPeople = [
 
 const sortStarWarsCharacters = (starWarsArr) => {
   // Solution code here...
+  starWarsArr.sort((a,b)=>{
+    return b.height-a.height ;
+  })
+  return starWarsArr
 }
 
 /* ------------------------------------------------------------------------------------------------
@@ -48,9 +52,9 @@ Write a function named joinArray that takes an array and joins all of the elemen
 
 const joinArray = (arr) => {
   // Solution code here...
-  let stringSpace=arr.join(' ');
-  
-  return stringSpace;
+  let string=arr.join(' ');
+  return string;
+
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -69,6 +73,10 @@ For example, if the input is 'Welcome', the output will be:
 const howMuchPencil = (str) => {
   let result = [];
   // Solution code here...
+  for (let i = 0; i <= str.length; i++) {
+    let a = str.slice(i, str.length);
+    result.push(a);
+  }
   
   return result;
 };
@@ -83,6 +91,8 @@ For example, wordsToCharList('gregor') returns ['g','r','e','g','o','r'].
 
 const wordsToCharList = (arr) => {
   // Solution code here...
+  let newArray=arr.split('');
+  return newArray
 };
 
 
